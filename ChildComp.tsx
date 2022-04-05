@@ -6,4 +6,6 @@ import * as React from 'react';
 interface childProp {
   children: JSX.Element;
 }
-export default ({ children }) => <React.Fragment> {children}</React.Fragment>;
+export default ({ children }: childProp) => (
+  <React.Fragment> {children}</React.Fragment>
+);
